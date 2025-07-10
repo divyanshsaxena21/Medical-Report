@@ -1,7 +1,7 @@
 fastapi
 uvicorn
-tensorflow
-numpy
+tensorflow-cpu
 pillow
+numpy
 huggingface_hub
 python-multipart
