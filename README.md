@@ -4,22 +4,16 @@
 
 **Medical Report Analysis** is a web-based application designed to analyze and interpret X-ray images. By integrating deep learning with modern web technologies, this project features a **React-based frontend** and a **deployed machine learning backend**. It leverages a **pre-trained model** for medical image classification, enhancing diagnostic capabilities with real-time predictions.
 
-The application allows users to upload X-ray images, analyze them using a machine learning model, and view detailed insights and predictions about the medical condition represented in the images
+The application allows users to upload X-ray images, analyze them using a machine learning model, and view detailed insights and predictions about the medical condition represented in the images.
 
 ## Features ✨
 
 * **X-ray Image Upload**: Users can upload X-ray images for analysis via the React interface.
-  ![X-ray Upload](public/xray-upload.png)
 * **Deep Learning Model Integration**: The backend uses a trained `.h5` model to classify medical images, which is accessible through an API.
-  ![Deep Learning Model](public/model-integration.png)
 * **Interactive Web Interface**: The web application provides a seamless and user-friendly interface, built with React.
-  ![Web Interface](public/web-interface.png)
 * **Visualization**: After uploading an image, the system displays detailed analysis and insights, providing a clear understanding of the results.
-  ![Visualization](public/visualization.png)
 * **Secure Storage**: Uploaded X-ray images are securely managed and stored through the backend.
-  ![Secure Storage](public/secure-storage.png)
 * **Live Deployment**: The project is fully deployed and connected, with both the frontend and backend working live in a production environment.
-  ![Live Deployment](public/live-deployment.png)
 
 ## Technologies Used 🛠️
 
