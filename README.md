@@ -1,110 +1,57 @@
-
-# Medical Report Analysis - X-Ray Analysis
+# 🏥 **Medical Report Analysis - X-Ray Analysis** 🩻
 
 ## Overview
-Medical Report Analysis is a web-based application designed to analyze and interpret X-ray images. This project integrates deep learning and modern web technologies, featuring a React-based frontend and a deployed machine learning backend. The system leverages a pre-trained model for medical image classification, enhancing diagnostic capabilities with real-time predictions.
 
-## Features
-- **X-ray Image Upload**: Upload X-ray images for analysis via the React interface.
-- **Deep Learning Model Integration**: Utilizes a trained `.h5` model to classify medical images, accessible via the live backend API.
-- **Interactive Web Interface**: User-friendly React-based application for seamless interaction.
-- **Visualization**: Displays analyzed results with insightful information.
-- **Secure Storage**: Manages uploaded files securely through the backend.
-- **Live Deployment**: Fully functional application with connected frontend and backend.
+**Medical Report Analysis** is a web-based application designed to analyze and interpret X-ray images. By integrating deep learning with modern web technologies, this project features a **React-based frontend** and a **deployed machine learning backend**. It leverages a **pre-trained model** for medical image classification, enhancing diagnostic capabilities with real-time predictions.
 
-## Project Structure
-```
-├── public/                  # Static assets (images, etc.)
-├── src/                     # React source code
-│   ├── components/          # React components
-│   ├── pages/               # Page components
-│   ├── App.js               # Main React app entry
-│   ├── index.js             # React DOM rendering
-├── uploads/                 # Directory to store uploaded X-ray images (handled by backend)
-├── model.h5                 # Trained deep learning model (hosted on backend)
-├── requirements.txt         # Backend dependencies
-├── vercel.json              # Configuration for Vercel deployment
-├── README.md                # Project documentation
-├── X_RAY.ipynb              # Jupyter notebook for model training
-```
+The application allows users to upload X-ray images, analyze them using a machine learning model, and view detailed insights and predictions about the medical condition represented in the images.
 
-## Installation and Setup
-### Frontend (React)
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/divyanshsaxena21/X-Ray_Analysis.git
-   cd X-Ray_Analysis
-   ```
-2. Install the required dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the React development server:
-   ```bash
-   npm start
-   ```
-   Access the application locally at `http://localhost:3000`.
+![Medical Report Analysis](public/overview-image.png)
 
-### Backend (ML)
-- The backend is already deployed and running live. No local setup is required for the ML component.
-- Ensure the React app is configured to connect to the live backend API endpoint (e.g., `https://your-backend-api.vercel.app`).
+## Features ✨
 
-## Usage
-1. Open the web application at `http://localhost:3000` (local) or the live URL (e.g., `medicure.ayushsharma.site`).
-2. Upload an X-ray image (supported formats: `.jpg`, `.png`, `.jpeg`).
-3. Click on the "Analyze" button.
-4. View the prediction results and insights on the results page.
+* **X-ray Image Upload**: Users can upload X-ray images for analysis via the React interface.
+  ![X-ray Upload](public/xray-upload.png)
+* **Deep Learning Model Integration**: The backend uses a trained `.h5` model to classify medical images, which is accessible through an API.
+  ![Deep Learning Model](public/model-integration.png)
+* **Interactive Web Interface**: The web application provides a seamless and user-friendly interface, built with React.
+  ![Web Interface](public/web-interface.png)
+* **Visualization**: After uploading an image, the system displays detailed analysis and insights, providing a clear understanding of the results.
+  ![Visualization](public/visualization.png)
+* **Secure Storage**: Uploaded X-ray images are securely managed and stored through the backend.
+  ![Secure Storage](public/secure-storage.png)
+* **Live Deployment**: The project is fully deployed and connected, with both the frontend and backend working live in a production environment.
+  ![Live Deployment](public/live-deployment.png)
 
-## Technologies Used
-- **Frontend**: React, HTML, CSS, JavaScript
-- **Backend**: Python (Flask or similar), TensorFlow/Keras
-- **Deployment**: Vercel (for both frontend and backend)
-- **Notebook**: Jupyter Notebook for model training and testing
+## Technologies Used 🛠️
 
-## Model Details
-- The `model.h5` file is a deep learning model trained on medical X-ray datasets.
-- It utilizes convolutional neural networks (CNNs) for feature extraction and classification.
-- Training details are available in the `X_RAY.ipynb` file.
-- The model is hosted on the live backend and accessed via API calls.
+* **Frontend**: React, HTML, CSS, JavaScript
+* **Backend**: Python (Flask or similar), TensorFlow/Keras
+* **Deployment**: Vercel (for both frontend and backend)
+* **Notebook**: Jupyter Notebook for model training and testing
 
-## Deployment
-- The application is deployed using Vercel, with the React frontend and ML backend connected and working live.
-- Update the `vercel.json` file for custom deployment configurations if needed.
-- Live URL: [medicure.ayushsharma.site](https://medicure.ayushsharma.site/)
+## Model Details 📊
 
-## Screenshots
-Include screenshots of the React interface and prediction results to give users a visual idea of the project. (Add images to the `public` folder and reference them here, e.g., `![Screenshot](/screenshot1.png)`.)
+* The `model.h5` file is a deep learning model trained on medical X-ray datasets. It uses **convolutional neural networks (CNNs)** for feature extraction and classification.
+* The model can detect medical conditions from X-ray images and return relevant insights and predictions.
+* Full training details and model architecture are available in the `X_RAY.ipynb` notebook file.
+* The model is hosted on the live backend and accessed via API calls for real-time predictions.
 
-## Contributing
-Contributions are welcome! Please follow the steps below:
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feature-name`
-3. Commit your changes: `git commit -m "Add feature"`
-4. Push to the branch: `git push origin feature-name`
-5. Open a pull request.
+## Screenshots 📸
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+Here are some screenshots of the application to give you a visual idea of the interface and results:
 
-## Acknowledgements
-- Inspiration from advancements in medical image processing.
-- Dataset and resources used for training the model.
-- Thanks to the team for the React and ML integration.
+<img width="1919" height="977" alt="image" src="https://github.com/user-attachments/assets/ef6c0300-9c2d-4c71-82f6-54a568e6e98a" />
 
-## Topics
-html, react, machine-learning, x-ray
+<img width="1919" height="972" alt="image" src="https://github.com/user-attachments/assets/e01b9c95-3176-4f8a-b289-c2f0e27473ac" />
 
-## Resources
-- [Readme](README.md)
-- [Activity](https://github.com/divyanshsaxena21/X-Ray_Analysis/graphs/commit-activity)
-- [Stars](https://github.com/divyanshsaxena21/X-Ray_Analysis/stargazers)
-- [Watchers](https://github.com/divyanshsaxena21/X-Ray_Analysis/watchers)
-- [Forks](https://github.com/divyanshsaxena21/X-Ray_Analysis/network/members)
-- [Releases](https://github.com/divyanshsaxena21/X-Ray_Analysis/releases)
+## Deployment 🌍
 
-## Languages
-- JavaScript: ~50% (React frontend)
-- CSS: ~20%
-- HTML: ~15%
-- Python: ~15% (backend/ML)
-=======
+* The application is fully deployed and available for use at [medicure.ayushsharma.site](https://medicure.ayushsharma.site/).
+* The React frontend and ML backend are live, connected, and operational.
+
+## Acknowledgements 🙏
+
+* Inspiration from advancements in medical image processing.
+* Datasets and resources used for training the model.
+* Thanks to the community for React and machine learning model development.
